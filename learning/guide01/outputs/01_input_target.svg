@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" role="img" aria-labelledby="title desc">
+<title id="title">One sample: known history and future target</title>
+<desc id="desc">Synthetic hourly temperature data for a learning exercise. No model predictions.</desc>
+<rect width="940" height="420" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" fill="#243746">
+<text x="30" y="29" font-size="19">One sample: known history and future target</text>
+<text x="30" y="50" font-size="12">Synthetic data only; no trained model or predictions</text>
+<line x1="80" x2="910" y1="354.00" y2="354.00" stroke="#e4e9ed"/>
+<text x="70" y="358.00" text-anchor="end" font-size="12">41.9</text>
+<line x1="80" x2="910" y1="286.00" y2="286.00" stroke="#e4e9ed"/>
+<text x="70" y="290.00" text-anchor="end" font-size="12">45.2</text>
+<line x1="80" x2="910" y1="218.00" y2="218.00" stroke="#e4e9ed"/>
+<text x="70" y="222.00" text-anchor="end" font-size="12">48.6</text>
+<line x1="80" x2="910" y1="150.00" y2="150.00" stroke="#e4e9ed"/>
+<text x="70" y="154.00" text-anchor="end" font-size="12">51.9</text>
+<line x1="80" x2="910" y1="82.00" y2="82.00" stroke="#e4e9ed"/>
+<text x="70" y="86.00" text-anchor="end" font-size="12">55.3</text>
+<text x="80.00" y="378" text-anchor="middle" font-size="12">72</text>
+<text x="287.50" y="378" text-anchor="middle" font-size="12">87</text>
+<text x="495.00" y="378" text-anchor="middle" font-size="12">102</text>
+<text x="702.50" y="378" text-anchor="middle" font-size="12">116</text>
+<text x="910.00" y="378" text-anchor="middle" font-size="12">131</text>
+<rect x="80" y="82" width="830" height="272" fill="none" stroke="#b8c6cf"/>
+<text x="24" y="72" font-size="12">Temp. (C)</text>
+<text x="495.0" y="406" text-anchor="middle" font-size="13">Hour since start</text>
+<line x1="80" x2="102" y1="68" y2="68" stroke="#147d92" stroke-width="2.5"/>
+<text x="108" y="72" font-size="12">History input (48 h)</text>
+<polyline points="80.00,243.89 94.07,242.34 108.14,221.48 122.20,208.54 136.27,166.17 150.34,182.22 164.41,170.88 178.47,159.84 192.54,191.35 206.61,196.76 220.68,238.19 234.75,244.94 248.81,257.09 262.88,261.62 276.95,268.07 291.02,304.04 305.08,311.89 319.15,321.01 333.22,308.39 347.29,308.22 361.36,309.66 375.42,317.11 389.49,268.72 403.56,257.11 417.63,221.86 431.69,220.75 445.76,168.48 459.83,188.69 473.90,143.60 487.97,158.97 502.03,165.95 516.10,178.15 530.17,169.88 544.24,156.71 558.31,182.87 572.37,204.01 586.44,274.27 600.51,244.65 614.58,266.24 628.64,300.50 642.71,314.15 656.78,311.60 670.85,285.82 684.92,327.68 698.98,308.88 713.05,266.42 727.12,278.45 741.19,257.04" fill="none" stroke="#147d92" stroke-width="2" stroke-linejoin="round"/>
+<line x1="300" x2="322" y1="68" y2="68" stroke="#bd681e" stroke-width="2.5"/>
+<text x="328" y="72" font-size="12">Future target (12 h)</text>
+<polyline points="755.25,228.02 769.32,228.24 783.39,184.44 797.46,190.33 811.53,142.91 825.59,148.61 839.66,108.32 853.73,143.09 867.80,133.08 881.86,188.80 895.93,185.93 910.00,197.77" fill="none" stroke="#bd681e" stroke-width="2" stroke-linejoin="round"/>
+<line x1="748.22" x2="748.22" y1="82" y2="354" stroke="#596d7a" stroke-dasharray="5 5"/>
+<text x="741.22" y="100" text-anchor="end" font-size="12">Forecast origin</text>
+</g></svg>

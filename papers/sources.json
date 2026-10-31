@@ -1,0 +1,50 @@
+[
+  {
+    "file": "01_DLinear_2023_2205.13504v3.pdf",
+    "title": "Are Transformers Effective for Time Series Forecasting?",
+    "arxiv_version": "2205.13504v3",
+    "source": "https://arxiv.org/abs/2205.13504v3",
+    "download_url": "https://arxiv.org/pdf/2205.13504v3",
+    "download_date": "2026-10-31",
+    "pages": 15,
+    "bytes": 1584902,
+    "sha256": "97abddd1821cc72942c8d7ddde7e99466bb91f1bddc37c2b54e0e97be7b5be1b",
+    "reading_focus": "必读：PDF第1-4页方法，第5-8页实验与分析。"
+  },
+  {
+    "file": "02_Informer_2021_2012.07436v3.pdf",
+    "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+    "arxiv_version": "2012.07436v3",
+    "source": "https://arxiv.org/abs/2012.07436v3",
+    "download_url": "https://arxiv.org/pdf/2012.07436v3",
+    "download_date": "2026-10-31",
+    "pages": 15,
+    "bytes": 7291729,
+    "sha256": "95d8d427005e4dab28932b2630886931fc095996fdd4a65d0e050bae801ffc37",
+    "reading_focus": "选读：PDF第1页背景，第5-6页实验与ETT介绍。"
+  },
+  {
+    "file": "03_FEDformer_2022_2201.12740v3.pdf",
+    "title": "FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting",
+    "arxiv_version": "2201.12740v3",
+    "source": "https://arxiv.org/abs/2201.12740v3",
+    "download_url": "https://arxiv.org/pdf/2201.12740v3",
+    "download_date": "2026-10-31",
+    "pages": 19,
+    "bytes": 552549,
+    "sha256": "46252bcc8ae1153832596818b03220563132174336af779648782da708328e36",
+    "reading_focus": "改进前重点选读：PDF第2-4页分解与专家融合。"
+  },
+  {
+    "file": "04_NHiTS_2023_2201.12886v6.pdf",
+    "title": "N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting",
+    "arxiv_version": "2201.12886v6",
+    "source": "https://arxiv.org/abs/2201.12886v6",
+    "download_url": "https://arxiv.org/pdf/2201.12886v6",
+    "download_date": "2026-10-31",
+    "pages": 18,
+    "bytes": 2260584,
+    "sha256": "d8450c02ec3026fca6064769904ff4faa59808ac2daf9d226565ec0a57acec5b",
+    "reading_focus": "进阶选读：PDF第3-4页方法，第6-7页展示与消融。"
+  }
+]
