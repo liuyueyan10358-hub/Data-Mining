@@ -45,7 +45,9 @@ def moving_average(values, window):
     return result
 
 
-def save_chart(path, title, series, x_domain, boundary=None):
+def save_chart(path, title, series, x_domain, boundary=None, y_label='Temp. (C)',
+               subtitle='Synthetic data only; no trained model or predictions',
+               x_label='Hour since start', y_floor=None):
     """将少量教学数据画为独立SVG。无需安装绘图库。"""
     width, height = 940, 420
     left, top, right, bottom = 80, 82, 30, 66
@@ -54,6 +56,8 @@ def save_chart(path, title, series, x_domain, boundary=None):
     y_min, y_max = min(values), max(values)
     pad = max((y_max - y_min) * 0.12, 1)
     y_min, y_max = y_min - pad, y_max + pad
+    if y_floor is not None:
+        y_min = max(y_min, y_floor)
     x_min, x_max = x_domain
 
     def sx(x):
@@ -65,11 +69,11 @@ def save_chart(path, title, series, x_domain, boundary=None):
     svg = [
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" role="img" aria-labelledby="title desc">',
         f'<title id="title">{escape(title)}</title>',
-        '<desc id="desc">Synthetic hourly temperature data for a learning exercise. No model predictions.</desc>',
+        f'<desc id="desc">{escape(subtitle)}</desc>',
         '<rect width="940" height="420" fill="#ffffff"/>',
         '<g font-family="Arial, sans-serif" fill="#243746">',
         f'<text x="30" y="29" font-size="19">{escape(title)}</text>',
-        '<text x="30" y="50" font-size="12">Synthetic data only; no trained model or predictions</text>',
+        f'<text x="30" y="50" font-size="12">{escape(subtitle)}</text>',
     ]
     for tick in range(5):
         value = y_min + (y_max - y_min) * tick / 4
@@ -80,8 +84,8 @@ def save_chart(path, title, series, x_domain, boundary=None):
         value = x_min + (x_max - x_min) * tick / 4
         svg.append(f'<text x="{sx(value):.2f}" y="{height-bottom+24}" text-anchor="middle" font-size="12">{value:.0f}</text>')
     svg += [f'<rect x="{left}" y="{top}" width="{chart_w}" height="{chart_h}" fill="none" stroke="#b8c6cf"/>',
-            '<text x="24" y="72" font-size="12">Temp. (C)</text>',
-            f'<text x="{left+chart_w/2}" y="{height-14}" text-anchor="middle" font-size="13">Hour since start</text>']
+            f'<text x="20" y="{top+chart_h/2}" transform="rotate(-90 20 {top+chart_h/2})" text-anchor="middle" font-size="12">{escape(y_label)}</text>',
+            f'<text x="{left+chart_w/2}" y="{height-14}" text-anchor="middle" font-size="13">{escape(x_label)}</text>']
     legend_x = left
     for name, color, points in series:
         svg += [f'<line x1="{legend_x}" x2="{legend_x+22}" y1="68" y2="68" stroke="{color}" stroke-width="2.5"/>',

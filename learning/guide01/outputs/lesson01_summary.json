@@ -5,8 +5,8 @@
   "history": 48,
   "horizon": 12,
   "average_windows": [
-    7,
-    25
+    3,
+    49
   ],
   "split_points": {
     "train": 288,
