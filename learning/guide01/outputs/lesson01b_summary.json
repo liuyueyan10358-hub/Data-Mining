@@ -1,8 +1,0 @@
-{
-  "data_type": "synthetic; decomposition only; no model trained",
-  "window": 49,
-  "moving_average_type": "trailing; differs from DLinear centered smoothing",
-  "complete_points": 432,
-  "reconstruction_max_error": 0.0,
-  "interpretation": "Near-zero reconstruction error verifies decomposition algebra, not forecasting accuracy."
-}
